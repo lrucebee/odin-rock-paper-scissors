@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+:root {
+  --color-pri: #b2f8bb;
+  --color-bg: #000;
+  --color-txt: #fff;
+  --color-win: #62fd90;
+  --color-lose: #d37272;
+  --font-body: 'VT323', monospace;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: inherit;
+}
+
+body {
+  background-color: var(--color-bg);
+  color: var(--color-txt);
+  font-family: var(--font-body);
+}
+
+main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.game {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.player {
+  margin: 0 auto;
+}
+
+.player-choice {
+  display: inline-block;
+  font-size: 2.5rem;
+  background-color: #444;
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.player-choice-p1 {
+  transform: rotateX(180deg);
+}
+
+.player-win {
+  background-color: var(--color-win);
+}
+
+.player-lose {
+  background-color: var(--color-lose);
+}
+
+.player-name {
+  font-size: 2rem;
+  margin: 1rem auto;
+}
+
+.game-result {
+  font-size: 2.5rem;
+  margin: 3rem auto;
+}
+
+.game-para {
+  font-size: 2rem;
+  text-transform: uppercase;
+}
+
+.choices {
+  text-align: center;
+}
+
+.btn {
+  background-color: #eee;
+  font: inherit;
+  border: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.choice {
+  font-size: 1.85rem;
+  margin: 0 0.25em;
+  height: 70px;
+  width: 125px;
+}
+
+.reset {
+  font-size: 2rem;
+  padding: 0.5em 1em;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.hide {
+  display: none;
+}

@@ -1,14 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rock Paper Scissors | Odin Project</title>
+    <link rel="stylesheet" href="./style.css" />
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Rock Paper Scissors | Odin Project</title>
-</head>
+    <script src="./script.js" defer></script>
+  </head>
 
-<body>
-</body>
-<script src="./script.js"></script>
+  <body>
+    <main>
+      <section class="game">
+        <div class="player">
+          <p class="player-name">
+            Computer: <span class="player-score player-score-p1">0</span>
+          </p>
+          <div class="player-choice player-choice-p1">❔</div>
+        </div>
 
+        <div class="game-result">
+          <h1 class="game-heading">ROCK PAPER SCISSORS</h1>
+          <p class="game-para">First Player to Score 5 Wins</p>
+        </div>
+
+        <div class="player">
+          <div class="player-choice player-choice-p2">❔</div>
+          <p class="player-name">
+            Your Score: <span class="player-score player-score-p2">0</span>
+          </p>
+        </div>
+      </section>
+
+      <section class="buttons">
+        <div class="choices">
+          <button class="btn choice paper" value="paper">🖐</button>
+          <button class="btn choice scissors" value="scissors">✌</button>
+          <button class="btn choice rock" value="rock">✊</button>
+        </div>
+        <button class="btn reset hide">Play Again</button>
+      </section>
+    </main>
+  </body>
 </html>
